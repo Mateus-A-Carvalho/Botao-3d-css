@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button 3d Effect</title>
+    <style>
+
+        html {
+            /* 18:41 - 15/11/2022 - Resolvido parcialmente o problema da centralização. Solução: Usei apenas o elemento HTML como elementro-pai do elemento button. Adicionei a propriedade display: flex; justify-content: center e align-items: center. Consegui centralizar horizontalmente. Falta-me agora centralizá-lo verticalmente. */
+            background-color: #502550;
+            margin: none;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            /* 14:15 - 13/11/2022 - Problema em deixar o elemento body com 100% do tamanho da viewport.  */
+            /* 06:20 - 14/11/2022 - O Body ocupa apenas metade de toda a página e o elemento button não está no centro da página, e sim na parte de cima do body cujo espaço ocupa metade da página. */
+            /* 06:29 - 14/11/2022 - Por hora, problema parcialmente resolvido. Percebi que não havia necessidade de ter uma div.*/
+
+
+        button {
+            /* 17:53 - 15/11/2022 - Ao mudar a cor do conteúdo do elemento "button" foi mudado também sua sombra. Verificar o que aconteceu. */
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #502550;
+            border-radius: 5px;
+            box-shadow: 5px 5px 5px 3px #e046e0;
+            width: 200px;
+            height: 70px;
+            font-size: 18px;
+            border: 3px solid black;
+            cursor: pointer;
+            
+        }
+
+        button:hover {
+            transform: translateX(5px) translateY(5px);
+            box-shadow: #e046e0 7px 9px 3px;
+        }
+
+    </style>
+</head>
+<body>
+    <button>Button Effect 3d</button>
+</body>
+</html>
